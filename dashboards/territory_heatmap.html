@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Territory Heatmap | Foodservice Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">📊</div>
+            <span>FOODSERVICE</span>
+            <span class="logo-sub">ANALYTICS</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html">
+                    <span class="nav-icon">🏠</span>
+                    <span>Executive Summary</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="distributor_scorecard.html">
+                    <span class="nav-icon">🏭</span>
+                    <span>Distributor Scorecards</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="rep_performance.html">
+                    <span class="nav-icon">👥</span>
+                    <span>Rep Performance</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="territory_heatmap.html">
+                    <span class="nav-icon">🗺️</span>
+                    <span>Territory Heatmap</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="pipeline_health.html">
+                    <span class="nav-icon">📈</span>
+                    <span>Pipeline Health</span>
+                </a>
+            </li>
+        </ul>
+        <div class="nav-footer">
+            <p>Last Updated</p>
+            <p id="lastUpdated" class="update-time">--</p>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="page-header">
+            <div class="header-content">
+                <h1>Territory Heatmap</h1>
+                <p class="header-subtitle">Regional performance comparison & territory analysis</p>
+            </div>
+        </header>
+
+        <!-- Region Cards -->
+        <section class="territory-container">
+            <h3 style="margin-bottom: 1rem;">Regional Overview</h3>
+            <div class="region-grid" id="regionGrid">
+                <div class="region-card">
+                    <div class="loading">Loading...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Territory Details Table -->
+        <section class="table-container" style="margin-top: 1.5rem;">
+            <div class="table-header">
+                <h3>Territory Details</h3>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Territory</th>
+                        <th>State</th>
+                        <th>Region</th>
+                        <th>Net Sales</th>
+                        <th>Operators</th>
+                        <th>Reps</th>
+                    </tr>
+                </thead>
+                <tbody id="territoryTable">
+                    <tr>
+                        <td colspan="6" class="loading">Loading...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTerritoryHeatmap();
+            document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+        });
+    </script>
+</body>
+
+</html>

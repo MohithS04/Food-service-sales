@@ -1,0 +1,37 @@
+[
+  {
+    "stage":"Prospecting",
+    "count":446,
+    "value":52177625.2599999979,
+    "avg_probability":10.0,
+    "weighted_value":5217762.5259999996
+  },
+  {
+    "stage":"Qualification",
+    "count":407,
+    "value":47413132.1700000018,
+    "avg_probability":25.0,
+    "weighted_value":11853283.0425000004
+  },
+  {
+    "stage":"Needs Analysis",
+    "count":402,
+    "value":47307035.4600000009,
+    "avg_probability":40.0,
+    "weighted_value":18922814.1840000004
+  },
+  {
+    "stage":"Proposal",
+    "count":387,
+    "value":43606502.6599999964,
+    "avg_probability":60.0,
+    "weighted_value":26163901.5960000008
+  },
+  {
+    "stage":"Negotiation",
+    "count":410,
+    "value":47392276.299999997,
+    "avg_probability":80.0,
+    "weighted_value":37913821.0399999991
+  }
+]

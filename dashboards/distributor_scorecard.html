@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributor Scorecards | Foodservice Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">📊</div>
+            <span>FOODSERVICE</span>
+            <span class="logo-sub">ANALYTICS</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html">
+                    <span class="nav-icon">🏠</span>
+                    <span>Executive Summary</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="distributor_scorecard.html">
+                    <span class="nav-icon">🏭</span>
+                    <span>Distributor Scorecards</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="rep_performance.html">
+                    <span class="nav-icon">👥</span>
+                    <span>Rep Performance</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="territory_heatmap.html">
+                    <span class="nav-icon">🗺️</span>
+                    <span>Territory Heatmap</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="pipeline_health.html">
+                    <span class="nav-icon">📈</span>
+                    <span>Pipeline Health</span>
+                </a>
+            </li>
+        </ul>
+        <div class="nav-footer">
+            <p>Last Updated</p>
+            <p id="lastUpdated" class="update-time">--</p>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="page-header">
+            <div class="header-content">
+                <h1>Distributor Scorecards</h1>
+                <p class="header-subtitle">Performance metrics by distributor | Net Sales, Operators, & Margins</p>
+            </div>
+            <div class="header-actions">
+                <select id="typeFilter" class="filter-select">
+                    <option value="all">All Types</option>
+                    <option value="National">National</option>
+                    <option value="Regional">Regional</option>
+                    <option value="Specialty">Specialty</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Summary KPIs -->
+        <section class="kpi-grid">
+            <div class="kpi-card primary">
+                <div class="kpi-icon">🏭</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Total Distributors</span>
+                    <span class="kpi-value" id="totalDistributors">--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">💰</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Combined Net Sales</span>
+                    <span class="kpi-value" id="combinedSales">$--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">🏢</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Total Operators Served</span>
+                    <span class="kpi-value" id="totalOpsServed">--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">📦</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Products in Catalog</span>
+                    <span class="kpi-value" id="totalProducts">--</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scorecard Grid -->
+        <section class="scorecard-grid" id="scorecardGrid">
+            <div class="scorecard">
+                <div class="loading">Loading distributor data...</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadDistributorScorecards();
+            document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+
+            // Update summary KPIs
+            fetch('./data/distributor_scorecards.json')
+                .then(r => r.json())
+                .then(data => {
+                    document.getElementById('totalDistributors').textContent = data.length;
+                    document.getElementById('combinedSales').textContent =
+                        '$' + (data.reduce((a, d) => a + (d.net_sales || 0), 0) / 1e9).toFixed(2) + 'B';
+                    document.getElementById('totalOpsServed').textContent =
+                        (data.reduce((a, d) => a + (d.active_operators || 0), 0) / 1e3).toFixed(1) + 'K';
+                    document.getElementById('totalProducts').textContent =
+                        Math.max(...data.map(d => d.products_sold || 0));
+                });
+        });
+    </script>
+</body>
+
+</html>

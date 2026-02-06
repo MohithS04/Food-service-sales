@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline Health | Foodservice Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">📊</div>
+            <span>FOODSERVICE</span>
+            <span class="logo-sub">ANALYTICS</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html">
+                    <span class="nav-icon">🏠</span>
+                    <span>Executive Summary</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="distributor_scorecard.html">
+                    <span class="nav-icon">🏭</span>
+                    <span>Distributor Scorecards</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="rep_performance.html">
+                    <span class="nav-icon">👥</span>
+                    <span>Rep Performance</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="territory_heatmap.html">
+                    <span class="nav-icon">🗺️</span>
+                    <span>Territory Heatmap</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="pipeline_health.html">
+                    <span class="nav-icon">📈</span>
+                    <span>Pipeline Health</span>
+                </a>
+            </li>
+        </ul>
+        <div class="nav-footer">
+            <p>Last Updated</p>
+            <p id="lastUpdated" class="update-time">--</p>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="page-header">
+            <div class="header-content">
+                <h1>Pipeline Health</h1>
+                <p class="header-subtitle">Stage analysis, win rate trends, & deal velocity</p>
+            </div>
+        </header>
+
+        <!-- Summary KPIs -->
+        <section class="kpi-grid">
+            <div class="kpi-card primary">
+                <div class="kpi-icon">📊</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Total Pipeline Value</span>
+                    <span class="kpi-value" id="pipelineTotal">$--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">🎯</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Weighted Pipeline</span>
+                    <span class="kpi-value" id="weightedPipeline">$--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">📝</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Open Opportunities</span>
+                    <span class="kpi-value" id="openOpps">--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">✅</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Overall Win Rate</span>
+                    <span class="kpi-value" id="overallWinRate">--%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Funnel and Chart -->
+        <section class="charts-row" style="grid-template-columns: 1fr 1fr;">
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h3>Pipeline by Stage</h3>
+                </div>
+                <div class="funnel-container" id="pipelineFunnel">
+                    <div class="funnel-stage">
+                        <div class="loading">Loading pipeline data...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h3>Win Rate Trend (Monthly)</h3>
+                </div>
+                <canvas id="winRateTrendChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Stage Details -->
+        <section class="table-container" style="margin-top: 1.5rem;">
+            <div class="table-header">
+                <h3>Stage Analytics</h3>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Stage</th>
+                        <th>Count</th>
+                        <th>Total Value</th>
+                        <th>Avg Probability</th>
+                        <th>Weighted Value</th>
+                        <th>% of Pipeline</th>
+                    </tr>
+                </thead>
+                <tbody id="stageTable">
+                    <tr>
+                        <td colspan="6" class="loading">Loading...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPipelineHealth();
+            document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+
+            // Load and populate data
+            fetch('./data/pipeline_health.json')
+                .then(r => r.json())
+                .then(data => {
+                    const total = data.reduce((a, d) => a + (d.value || 0), 0);
+                    const weighted = data.reduce((a, d) => a + (d.weighted_value || 0), 0);
+                    const count = data.reduce((a, d) => a + (d.count || 0), 0);
+
+                    document.getElementById('pipelineTotal').textContent = '$' + (total / 1e6).toFixed(2) + 'M';
+                    document.getElementById('weightedPipeline').textContent = '$' + (weighted / 1e6).toFixed(2) + 'M';
+                    document.getElementById('openOpps').textContent = count.toLocaleString();
+
+                    // Stage table
+                    const tbody = document.getElementById('stageTable');
+                    tbody.innerHTML = data.map(d => `
+                        <tr>
+                            <td><strong>${d.stage}</strong></td>
+                            <td>${d.count}</td>
+                            <td>$${(d.value / 1e6).toFixed(2)}M</td>
+                            <td>${d.avg_probability.toFixed(0)}%</td>
+                            <td>$${(d.weighted_value / 1e6).toFixed(2)}M</td>
+                            <td>
+                                <div class="progress-bar" style="width: 100px; display: inline-block;">
+                                    <div class="progress-fill" style="width: ${(d.value / total) * 100}%"></div>
+                                </div>
+                                ${((d.value / total) * 100).toFixed(1)}%
+                            </td>
+                        </tr>
+                    `).join('');
+                });
+
+            // Get win rate from executive summary
+            fetch('./data/executive_summary.json')
+                .then(r => r.json())
+                .then(data => {
+                    document.getElementById('overallWinRate').textContent = (data.win_rate || 0).toFixed(1) + '%';
+                });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rep Performance | Foodservice Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">📊</div>
+            <span>FOODSERVICE</span>
+            <span class="logo-sub">ANALYTICS</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html">
+                    <span class="nav-icon">🏠</span>
+                    <span>Executive Summary</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="distributor_scorecard.html">
+                    <span class="nav-icon">🏭</span>
+                    <span>Distributor Scorecards</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a href="rep_performance.html">
+                    <span class="nav-icon">👥</span>
+                    <span>Rep Performance</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="territory_heatmap.html">
+                    <span class="nav-icon">🗺️</span>
+                    <span>Territory Heatmap</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="pipeline_health.html">
+                    <span class="nav-icon">📈</span>
+                    <span>Pipeline Health</span>
+                </a>
+            </li>
+        </ul>
+        <div class="nav-footer">
+            <p>Last Updated</p>
+            <p id="lastUpdated" class="update-time">--</p>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="page-header">
+            <div class="header-content">
+                <h1>Sales Rep Performance</h1>
+                <p class="header-subtitle">Rankings, Win Rates, & Activity Analysis</p>
+            </div>
+            <div class="header-actions">
+                <select id="regionFilter" class="filter-select">
+                    <option value="all">All Regions</option>
+                    <option value="Northeast">Northeast</option>
+                    <option value="Southeast">Southeast</option>
+                    <option value="Midwest">Midwest</option>
+                    <option value="West">West</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Summary KPIs -->
+        <section class="kpi-grid">
+            <div class="kpi-card primary">
+                <div class="kpi-icon">👥</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Total Reps</span>
+                    <span class="kpi-value" id="totalReps">--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">✅</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Avg Win Rate</span>
+                    <span class="kpi-value" id="avgWinRate">--%</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">💎</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Avg Deal Size</span>
+                    <span class="kpi-value" id="avgDeal">$--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">📞</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Total Activities</span>
+                    <span class="kpi-value" id="totalActivities">--</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Row -->
+        <section class="charts-row" style="grid-template-columns: 1fr 1fr;">
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h3>Activity → Revenue Correlation</h3>
+                </div>
+                <canvas id="correlationChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h3>Win Rate by Tier</h3>
+                </div>
+                <canvas id="tierChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Rep Table -->
+        <section class="table-container" style="margin-top: 1.5rem;">
+            <div class="table-header">
+                <h3>Sales Rep Rankings</h3>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Rep Name</th>
+                        <th>Tier</th>
+                        <th>Territory</th>
+                        <th>Revenue</th>
+                        <th>Win Rate</th>
+                        <th>Deals</th>
+                        <th>Avg Deal</th>
+                        <th>Quota %</th>
+                        <th>Activities</th>
+                    </tr>
+                </thead>
+                <tbody id="repTable">
+                    <tr>
+                        <td colspan="10" class="loading">Loading...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadRepPerformance();
+            document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+
+            // Update summary KPIs
+            fetch('./data/rep_rankings.json')
+                .then(r => r.json())
+                .then(data => {
+                    document.getElementById('totalReps').textContent = data.length;
+                    const avgWin = data.reduce((a, d) => a + (d.win_rate || 0), 0) / data.length;
+                    document.getElementById('avgWinRate').textContent = avgWin.toFixed(1) + '%';
+                    const avgDeal = data.reduce((a, d) => a + (d.avg_deal || 0), 0) / data.length;
+                    document.getElementById('avgDeal').textContent = '$' + (avgDeal / 1000).toFixed(1) + 'K';
+                    const totalAct = data.reduce((a, d) => a + (d.activities || 0), 0);
+                    document.getElementById('totalActivities').textContent = (totalAct / 1000).toFixed(1) + 'K';
+
+                    // Win rate by tier chart
+                    const tiers = {};
+                    data.forEach(d => {
+                        const tier = d.rep_tier || 'Unknown';
+                        if (!tiers[tier]) tiers[tier] = [];
+                        tiers[tier].push(d.win_rate || 0);
+                    });
+
+                    const tierCtx = document.getElementById('tierChart');
+                    new Chart(tierCtx, {
+                        type: 'bar',
+                        data: {
+                            labels: Object.keys(tiers),
+                            datasets: [{
+                                label: 'Avg Win Rate',
+                                data: Object.values(tiers).map(arr => arr.reduce((a, b) => a + b, 0) / arr.length),
+                                backgroundColor: ['#6366f1', '#10b981', '#f59e0b'],
+                                borderRadius: 4
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: { legend: { display: false } },
+                            scales: {
+                                y: {
+                                    grid: { color: '#334155' },
+                                    ticks: { color: '#64748b', callback: v => v + '%' }
+                                },
+                                x: {
+                                    grid: { display: false },
+                                    ticks: { color: '#94a3b8' }
+                                }
+                            }
+                        }
+                    });
+                });
+        });
+    </script>
+</body>
+
+</html>

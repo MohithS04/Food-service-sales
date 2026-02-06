@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodservice Sales Analytics | Executive Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">📊</div>
+            <span>FOODSERVICE</span>
+            <span class="logo-sub">ANALYTICS</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item active">
+                <a href="index.html">
+                    <span class="nav-icon">🏠</span>
+                    <span>Executive Summary</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="distributor_scorecard.html">
+                    <span class="nav-icon">🏭</span>
+                    <span>Distributor Scorecards</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="rep_performance.html">
+                    <span class="nav-icon">👥</span>
+                    <span>Rep Performance</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="territory_heatmap.html">
+                    <span class="nav-icon">🗺️</span>
+                    <span>Territory Heatmap</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="pipeline_health.html">
+                    <span class="nav-icon">📈</span>
+                    <span>Pipeline Health</span>
+                </a>
+            </li>
+        </ul>
+        <div class="nav-footer">
+            <p>Last Updated</p>
+            <p id="lastUpdated" class="update-time">--</p>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="page-header">
+            <div class="header-content">
+                <h1>Executive Summary</h1>
+                <p class="header-subtitle">Foodservice Sales Performance Overview | 2015-2025</p>
+            </div>
+            <div class="header-actions">
+                <select id="yearFilter" class="filter-select">
+                    <option value="all">All Years</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- KPI Cards -->
+        <section class="kpi-grid">
+            <div class="kpi-card primary">
+                <div class="kpi-icon">💰</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Total Net Sales</span>
+                    <span class="kpi-value" id="totalNetSales">$--</span>
+                    <span class="kpi-trend positive" id="salesTrend">↑ --% YoY</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">📦</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Total Units Sold</span>
+                    <span class="kpi-value" id="totalUnits">--</span>
+                    <span class="kpi-trend" id="unitsTrend">--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">🏢</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Active Operators</span>
+                    <span class="kpi-value" id="activeOperators">--</span>
+                    <span class="kpi-trend" id="operatorsTrend">--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">✅</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Win Rate</span>
+                    <span class="kpi-value" id="winRate">--%</span>
+                    <span class="kpi-trend" id="winRateTrend">--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">💎</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Avg Deal Size</span>
+                    <span class="kpi-value" id="avgDealSize">$--</span>
+                    <span class="kpi-trend" id="dealTrend">--</span>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">📊</div>
+                <div class="kpi-content">
+                    <span class="kpi-label">Pipeline Value</span>
+                    <span class="kpi-value" id="pipelineValue">$--</span>
+                    <span class="kpi-trend" id="pipelineTrend">-- open</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Row -->
+        <section class="charts-row">
+            <div class="chart-container large">
+                <div class="chart-header">
+                    <h3>Monthly Sales Trend</h3>
+                    <div class="chart-legend" id="salesLegend"></div>
+                </div>
+                <canvas id="salesTrendChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h3>Sales by Region</h3>
+                </div>
+                <canvas id="regionChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Second Row -->
+        <section class="charts-row">
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h3>Top Distributors</h3>
+                </div>
+                <canvas id="distributorChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h3>Pipeline by Stage</h3>
+                </div>
+                <canvas id="pipelineChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Data Tables -->
+        <section class="tables-row">
+            <div class="table-container">
+                <div class="table-header">
+                    <h3>Top Performing Sales Reps</h3>
+                    <a href="rep_performance.html" class="view-all">View All →</a>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rep Name</th>
+                            <th>Territory</th>
+                            <th>Revenue</th>
+                            <th>Win Rate</th>
+                            <th>Deals</th>
+                        </tr>
+                    </thead>
+                    <tbody id="topRepsTable">
+                        <tr><td colspan="5" class="loading">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-container">
+                <div class="table-header">
+                    <h3>YoY Growth by Distributor</h3>
+                    <a href="distributor_scorecard.html" class="view-all">View All →</a>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Distributor</th>
+                            <th>Type</th>
+                            <th>2024 Sales</th>
+                            <th>YoY Growth</th>
+                        </tr>
+                    </thead>
+                    <tbody id="yoyTable">
+                        <tr><td colspan="4" class="loading">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+    <script>
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', () => {
+            loadExecutiveSummary();
+            loadMonthlyTrends();
+            loadDistributorData();
+            loadRepRankings();
+            loadPipelineData();
+            loadYoYData();
+            document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+        });
+    </script>
+</body>
+</html>

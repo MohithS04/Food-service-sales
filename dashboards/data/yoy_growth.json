@@ -1,0 +1,1146 @@
+[
+  {
+    "year":"2025",
+    "distributor_name":"Gordon Food Service",
+    "distributor_type":"National",
+    "net_sales":376138734.8999999762,
+    "prior_year":371462876.6800000072,
+    "yoy_growth":1.3
+  },
+  {
+    "year":"2025",
+    "distributor_name":"Performance Food Group",
+    "distributor_type":"National",
+    "net_sales":374915443.4399999976,
+    "prior_year":367071137.6999999881,
+    "yoy_growth":2.1
+  },
+  {
+    "year":"2025",
+    "distributor_name":"US Foods",
+    "distributor_type":"National",
+    "net_sales":366722484.5099999905,
+    "prior_year":355030361.5500000119,
+    "yoy_growth":3.3
+  },
+  {
+    "year":"2025",
+    "distributor_name":"Sysco Corporation",
+    "distributor_type":"National",
+    "net_sales":365468408.8600000143,
+    "prior_year":360151081.8899999857,
+    "yoy_growth":1.5
+  },
+  {
+    "year":"2025",
+    "distributor_name":"Cheney Brothers",
+    "distributor_type":"Regional",
+    "net_sales":20330917.7600000016,
+    "prior_year":19815732.1400000006,
+    "yoy_growth":2.6
+  },
+  {
+    "year":"2025",
+    "distributor_name":"Baldor Specialty Foods",
+    "distributor_type":"Specialty",
+    "net_sales":19921560.9200000018,
+    "prior_year":17895850.3999999985,
+    "yoy_growth":11.3
+  },
+  {
+    "year":"2025",
+    "distributor_name":"Saval Foodservice",
+    "distributor_type":"Specialty",
+    "net_sales":19789127.8099999987,
+    "prior_year":20830104.5899999999,
+    "yoy_growth":-5.0
+  },
+  {
+    "year":"2025",
+    "distributor_name":"Ben E. Keith Foods",
+    "distributor_type":"Regional",
+    "net_sales":19306153.9600000009,
+    "prior_year":18667795.2899999991,
+    "yoy_growth":3.4
+  },
+  {
+    "year":"2025",
+    "distributor_name":"Shamrock Foods",
+    "distributor_type":"Regional",
+    "net_sales":18884080.8500000015,
+    "prior_year":19406721.4699999988,
+    "yoy_growth":-2.7
+  },
+  {
+    "year":"2025",
+    "distributor_name":"Labatt Food Service",
+    "distributor_type":"Regional",
+    "net_sales":18539670.7899999991,
+    "prior_year":18093973.5500000007,
+    "yoy_growth":2.5
+  },
+  {
+    "year":"2025",
+    "distributor_name":"Nicholas & Co",
+    "distributor_type":"Regional",
+    "net_sales":18134187.6400000006,
+    "prior_year":18852084.5799999982,
+    "yoy_growth":-3.8
+  },
+  {
+    "year":"2025",
+    "distributor_name":"Reinhart Foodservice",
+    "distributor_type":"Regional",
+    "net_sales":17811944.3399999999,
+    "prior_year":17803223.1499999985,
+    "yoy_growth":0.0
+  },
+  {
+    "year":"2025",
+    "distributor_name":"FreshPoint",
+    "distributor_type":"Specialty",
+    "net_sales":17099321.6700000018,
+    "prior_year":16119326.6799999997,
+    "yoy_growth":6.1
+  },
+  {
+    "year":"2024",
+    "distributor_name":"Gordon Food Service",
+    "distributor_type":"National",
+    "net_sales":371462876.6800000072,
+    "prior_year":324945271.6999999881,
+    "yoy_growth":14.3
+  },
+  {
+    "year":"2024",
+    "distributor_name":"Performance Food Group",
+    "distributor_type":"National",
+    "net_sales":367071137.6999999881,
+    "prior_year":329065981.5,
+    "yoy_growth":11.5
+  },
+  {
+    "year":"2024",
+    "distributor_name":"Sysco Corporation",
+    "distributor_type":"National",
+    "net_sales":360151081.8899999857,
+    "prior_year":322104310.6800000072,
+    "yoy_growth":11.8
+  },
+  {
+    "year":"2024",
+    "distributor_name":"US Foods",
+    "distributor_type":"National",
+    "net_sales":355030361.5500000119,
+    "prior_year":316637742.4800000191,
+    "yoy_growth":12.1
+  },
+  {
+    "year":"2024",
+    "distributor_name":"Saval Foodservice",
+    "distributor_type":"Specialty",
+    "net_sales":20830104.5899999999,
+    "prior_year":18640734.3999999985,
+    "yoy_growth":11.7
+  },
+  {
+    "year":"2024",
+    "distributor_name":"Cheney Brothers",
+    "distributor_type":"Regional",
+    "net_sales":19815732.1400000006,
+    "prior_year":17210895.6700000018,
+    "yoy_growth":15.1
+  },
+  {
+    "year":"2024",
+    "distributor_name":"Shamrock Foods",
+    "distributor_type":"Regional",
+    "net_sales":19406721.4699999988,
+    "prior_year":17692376.9899999984,
+    "yoy_growth":9.7
+  },
+  {
+    "year":"2024",
+    "distributor_name":"Nicholas & Co",
+    "distributor_type":"Regional",
+    "net_sales":18852084.5799999982,
+    "prior_year":16392512.4600000009,
+    "yoy_growth":15.0
+  },
+  {
+    "year":"2024",
+    "distributor_name":"Ben E. Keith Foods",
+    "distributor_type":"Regional",
+    "net_sales":18667795.2899999991,
+    "prior_year":17026542.6000000015,
+    "yoy_growth":9.6
+  },
+  {
+    "year":"2024",
+    "distributor_name":"Labatt Food Service",
+    "distributor_type":"Regional",
+    "net_sales":18093973.5500000007,
+    "prior_year":14835117.7699999996,
+    "yoy_growth":22.0
+  },
+  {
+    "year":"2024",
+    "distributor_name":"Baldor Specialty Foods",
+    "distributor_type":"Specialty",
+    "net_sales":17895850.3999999985,
+    "prior_year":15551829.1899999995,
+    "yoy_growth":15.1
+  },
+  {
+    "year":"2024",
+    "distributor_name":"Reinhart Foodservice",
+    "distributor_type":"Regional",
+    "net_sales":17803223.1499999985,
+    "prior_year":16287178.6999999993,
+    "yoy_growth":9.3
+  },
+  {
+    "year":"2024",
+    "distributor_name":"FreshPoint",
+    "distributor_type":"Specialty",
+    "net_sales":16119326.6799999997,
+    "prior_year":13867407.3599999994,
+    "yoy_growth":16.2
+  },
+  {
+    "year":"2023",
+    "distributor_name":"Performance Food Group",
+    "distributor_type":"National",
+    "net_sales":329065981.5,
+    "prior_year":313308233.5400000215,
+    "yoy_growth":5.0
+  },
+  {
+    "year":"2023",
+    "distributor_name":"Gordon Food Service",
+    "distributor_type":"National",
+    "net_sales":324945271.6999999881,
+    "prior_year":314831529.2099999785,
+    "yoy_growth":3.2
+  },
+  {
+    "year":"2023",
+    "distributor_name":"Sysco Corporation",
+    "distributor_type":"National",
+    "net_sales":322104310.6800000072,
+    "prior_year":305089107.6000000238,
+    "yoy_growth":5.6
+  },
+  {
+    "year":"2023",
+    "distributor_name":"US Foods",
+    "distributor_type":"National",
+    "net_sales":316637742.4800000191,
+    "prior_year":300614983.2699999809,
+    "yoy_growth":5.3
+  },
+  {
+    "year":"2023",
+    "distributor_name":"Saval Foodservice",
+    "distributor_type":"Specialty",
+    "net_sales":18640734.3999999985,
+    "prior_year":16191421.3200000003,
+    "yoy_growth":15.1
+  },
+  {
+    "year":"2023",
+    "distributor_name":"Shamrock Foods",
+    "distributor_type":"Regional",
+    "net_sales":17692376.9899999984,
+    "prior_year":16312681.5399999991,
+    "yoy_growth":8.5
+  },
+  {
+    "year":"2023",
+    "distributor_name":"Cheney Brothers",
+    "distributor_type":"Regional",
+    "net_sales":17210895.6700000018,
+    "prior_year":15615285.4900000002,
+    "yoy_growth":10.2
+  },
+  {
+    "year":"2023",
+    "distributor_name":"Ben E. Keith Foods",
+    "distributor_type":"Regional",
+    "net_sales":17026542.6000000015,
+    "prior_year":16546302.8900000006,
+    "yoy_growth":2.9
+  },
+  {
+    "year":"2023",
+    "distributor_name":"Nicholas & Co",
+    "distributor_type":"Regional",
+    "net_sales":16392512.4600000009,
+    "prior_year":14779040.9499999993,
+    "yoy_growth":10.9
+  },
+  {
+    "year":"2023",
+    "distributor_name":"Reinhart Foodservice",
+    "distributor_type":"Regional",
+    "net_sales":16287178.6999999993,
+    "prior_year":14352044.9499999993,
+    "yoy_growth":13.5
+  },
+  {
+    "year":"2023",
+    "distributor_name":"Baldor Specialty Foods",
+    "distributor_type":"Specialty",
+    "net_sales":15551829.1899999995,
+    "prior_year":15297897.0,
+    "yoy_growth":1.7
+  },
+  {
+    "year":"2023",
+    "distributor_name":"Labatt Food Service",
+    "distributor_type":"Regional",
+    "net_sales":14835117.7699999996,
+    "prior_year":15720069.6500000004,
+    "yoy_growth":-5.6
+  },
+  {
+    "year":"2023",
+    "distributor_name":"FreshPoint",
+    "distributor_type":"Specialty",
+    "net_sales":13867407.3599999994,
+    "prior_year":13841476.2300000004,
+    "yoy_growth":0.2
+  },
+  {
+    "year":"2022",
+    "distributor_name":"Gordon Food Service",
+    "distributor_type":"National",
+    "net_sales":314831529.2099999785,
+    "prior_year":359361064.9300000072,
+    "yoy_growth":-12.4
+  },
+  {
+    "year":"2022",
+    "distributor_name":"Performance Food Group",
+    "distributor_type":"National",
+    "net_sales":313308233.5400000215,
+    "prior_year":370520810.3000000119,
+    "yoy_growth":-15.4
+  },
+  {
+    "year":"2022",
+    "distributor_name":"Sysco Corporation",
+    "distributor_type":"National",
+    "net_sales":305089107.6000000238,
+    "prior_year":358338218.9800000191,
+    "yoy_growth":-14.9
+  },
+  {
+    "year":"2022",
+    "distributor_name":"US Foods",
+    "distributor_type":"National",
+    "net_sales":300614983.2699999809,
+    "prior_year":354834272.7200000286,
+    "yoy_growth":-15.3
+  },
+  {
+    "year":"2022",
+    "distributor_name":"Ben E. Keith Foods",
+    "distributor_type":"Regional",
+    "net_sales":16546302.8900000006,
+    "prior_year":18267182.7399999984,
+    "yoy_growth":-9.4
+  },
+  {
+    "year":"2022",
+    "distributor_name":"Shamrock Foods",
+    "distributor_type":"Regional",
+    "net_sales":16312681.5399999991,
+    "prior_year":19463744.129999999,
+    "yoy_growth":-16.2
+  },
+  {
+    "year":"2022",
+    "distributor_name":"Saval Foodservice",
+    "distributor_type":"Specialty",
+    "net_sales":16191421.3200000003,
+    "prior_year":20721680.1799999997,
+    "yoy_growth":-21.9
+  },
+  {
+    "year":"2022",
+    "distributor_name":"Labatt Food Service",
+    "distributor_type":"Regional",
+    "net_sales":15720069.6500000004,
+    "prior_year":17976587.6600000001,
+    "yoy_growth":-12.6
+  },
+  {
+    "year":"2022",
+    "distributor_name":"Cheney Brothers",
+    "distributor_type":"Regional",
+    "net_sales":15615285.4900000002,
+    "prior_year":17903625.6499999985,
+    "yoy_growth":-12.8
+  },
+  {
+    "year":"2022",
+    "distributor_name":"Baldor Specialty Foods",
+    "distributor_type":"Specialty",
+    "net_sales":15297897.0,
+    "prior_year":18003146.7199999988,
+    "yoy_growth":-15.0
+  },
+  {
+    "year":"2022",
+    "distributor_name":"Nicholas & Co",
+    "distributor_type":"Regional",
+    "net_sales":14779040.9499999993,
+    "prior_year":18196518.3599999994,
+    "yoy_growth":-18.8
+  },
+  {
+    "year":"2022",
+    "distributor_name":"Reinhart Foodservice",
+    "distributor_type":"Regional",
+    "net_sales":14352044.9499999993,
+    "prior_year":17768716.3099999987,
+    "yoy_growth":-19.2
+  },
+  {
+    "year":"2022",
+    "distributor_name":"FreshPoint",
+    "distributor_type":"Specialty",
+    "net_sales":13841476.2300000004,
+    "prior_year":16306719.6999999993,
+    "yoy_growth":-15.1
+  },
+  {
+    "year":"2021",
+    "distributor_name":"Performance Food Group",
+    "distributor_type":"National",
+    "net_sales":370520810.3000000119,
+    "prior_year":562502303.7200000286,
+    "yoy_growth":-34.1
+  },
+  {
+    "year":"2021",
+    "distributor_name":"Gordon Food Service",
+    "distributor_type":"National",
+    "net_sales":359361064.9300000072,
+    "prior_year":550445077.6399999857,
+    "yoy_growth":-34.7
+  },
+  {
+    "year":"2021",
+    "distributor_name":"Sysco Corporation",
+    "distributor_type":"National",
+    "net_sales":358338218.9800000191,
+    "prior_year":550296948.6200000048,
+    "yoy_growth":-34.9
+  },
+  {
+    "year":"2021",
+    "distributor_name":"US Foods",
+    "distributor_type":"National",
+    "net_sales":354834272.7200000286,
+    "prior_year":536106027.3100000024,
+    "yoy_growth":-33.8
+  },
+  {
+    "year":"2021",
+    "distributor_name":"Saval Foodservice",
+    "distributor_type":"Specialty",
+    "net_sales":20721680.1799999997,
+    "prior_year":32634297.2899999991,
+    "yoy_growth":-36.5
+  },
+  {
+    "year":"2021",
+    "distributor_name":"Shamrock Foods",
+    "distributor_type":"Regional",
+    "net_sales":19463744.129999999,
+    "prior_year":29505679.25,
+    "yoy_growth":-34.0
+  },
+  {
+    "year":"2021",
+    "distributor_name":"Ben E. Keith Foods",
+    "distributor_type":"Regional",
+    "net_sales":18267182.7399999984,
+    "prior_year":26690646.25,
+    "yoy_growth":-31.6
+  },
+  {
+    "year":"2021",
+    "distributor_name":"Nicholas & Co",
+    "distributor_type":"Regional",
+    "net_sales":18196518.3599999994,
+    "prior_year":28286225.0500000007,
+    "yoy_growth":-35.7
+  },
+  {
+    "year":"2021",
+    "distributor_name":"Baldor Specialty Foods",
+    "distributor_type":"Specialty",
+    "net_sales":18003146.7199999988,
+    "prior_year":28709941.3000000007,
+    "yoy_growth":-37.3
+  },
+  {
+    "year":"2021",
+    "distributor_name":"Labatt Food Service",
+    "distributor_type":"Regional",
+    "net_sales":17976587.6600000001,
+    "prior_year":27440532.0100000016,
+    "yoy_growth":-34.5
+  },
+  {
+    "year":"2021",
+    "distributor_name":"Cheney Brothers",
+    "distributor_type":"Regional",
+    "net_sales":17903625.6499999985,
+    "prior_year":30189250.120000001,
+    "yoy_growth":-40.7
+  },
+  {
+    "year":"2021",
+    "distributor_name":"Reinhart Foodservice",
+    "distributor_type":"Regional",
+    "net_sales":17768716.3099999987,
+    "prior_year":28903722.9800000004,
+    "yoy_growth":-38.5
+  },
+  {
+    "year":"2021",
+    "distributor_name":"FreshPoint",
+    "distributor_type":"Specialty",
+    "net_sales":16306719.6999999993,
+    "prior_year":23944834.879999999,
+    "yoy_growth":-31.9
+  },
+  {
+    "year":"2020",
+    "distributor_name":"Performance Food Group",
+    "distributor_type":"National",
+    "net_sales":562502303.7200000286,
+    "prior_year":524251795.2599999905,
+    "yoy_growth":7.3
+  },
+  {
+    "year":"2020",
+    "distributor_name":"Gordon Food Service",
+    "distributor_type":"National",
+    "net_sales":550445077.6399999857,
+    "prior_year":517249648.4100000262,
+    "yoy_growth":6.4
+  },
+  {
+    "year":"2020",
+    "distributor_name":"Sysco Corporation",
+    "distributor_type":"National",
+    "net_sales":550296948.6200000048,
+    "prior_year":506493797.3199999928,
+    "yoy_growth":8.6
+  },
+  {
+    "year":"2020",
+    "distributor_name":"US Foods",
+    "distributor_type":"National",
+    "net_sales":536106027.3100000024,
+    "prior_year":501121644.7099999785,
+    "yoy_growth":7.0
+  },
+  {
+    "year":"2020",
+    "distributor_name":"Saval Foodservice",
+    "distributor_type":"Specialty",
+    "net_sales":32634297.2899999991,
+    "prior_year":26973450.5399999991,
+    "yoy_growth":21.0
+  },
+  {
+    "year":"2020",
+    "distributor_name":"Cheney Brothers",
+    "distributor_type":"Regional",
+    "net_sales":30189250.120000001,
+    "prior_year":29141851.0300000012,
+    "yoy_growth":3.6
+  },
+  {
+    "year":"2020",
+    "distributor_name":"Shamrock Foods",
+    "distributor_type":"Regional",
+    "net_sales":29505679.25,
+    "prior_year":28926387.0300000012,
+    "yoy_growth":2.0
+  },
+  {
+    "year":"2020",
+    "distributor_name":"Reinhart Foodservice",
+    "distributor_type":"Regional",
+    "net_sales":28903722.9800000004,
+    "prior_year":25958978.9899999984,
+    "yoy_growth":11.3
+  },
+  {
+    "year":"2020",
+    "distributor_name":"Baldor Specialty Foods",
+    "distributor_type":"Specialty",
+    "net_sales":28709941.3000000007,
+    "prior_year":26129283.1999999993,
+    "yoy_growth":9.9
+  },
+  {
+    "year":"2020",
+    "distributor_name":"Nicholas & Co",
+    "distributor_type":"Regional",
+    "net_sales":28286225.0500000007,
+    "prior_year":25430074.25,
+    "yoy_growth":11.2
+  },
+  {
+    "year":"2020",
+    "distributor_name":"Labatt Food Service",
+    "distributor_type":"Regional",
+    "net_sales":27440532.0100000016,
+    "prior_year":25028342.7699999996,
+    "yoy_growth":9.6
+  },
+  {
+    "year":"2020",
+    "distributor_name":"Ben E. Keith Foods",
+    "distributor_type":"Regional",
+    "net_sales":26690646.25,
+    "prior_year":25824070.1099999994,
+    "yoy_growth":3.4
+  },
+  {
+    "year":"2020",
+    "distributor_name":"FreshPoint",
+    "distributor_type":"Specialty",
+    "net_sales":23944834.879999999,
+    "prior_year":22586379.1000000015,
+    "yoy_growth":6.0
+  },
+  {
+    "year":"2019",
+    "distributor_name":"Performance Food Group",
+    "distributor_type":"National",
+    "net_sales":524251795.2599999905,
+    "prior_year":519855106.3299999833,
+    "yoy_growth":0.8
+  },
+  {
+    "year":"2019",
+    "distributor_name":"Gordon Food Service",
+    "distributor_type":"National",
+    "net_sales":517249648.4100000262,
+    "prior_year":512296634.1399999857,
+    "yoy_growth":1.0
+  },
+  {
+    "year":"2019",
+    "distributor_name":"Sysco Corporation",
+    "distributor_type":"National",
+    "net_sales":506493797.3199999928,
+    "prior_year":506296126.3700000048,
+    "yoy_growth":0.0
+  },
+  {
+    "year":"2019",
+    "distributor_name":"US Foods",
+    "distributor_type":"National",
+    "net_sales":501121644.7099999785,
+    "prior_year":502258591.9100000262,
+    "yoy_growth":-0.2
+  },
+  {
+    "year":"2019",
+    "distributor_name":"Cheney Brothers",
+    "distributor_type":"Regional",
+    "net_sales":29141851.0300000012,
+    "prior_year":28437874.9699999988,
+    "yoy_growth":2.5
+  },
+  {
+    "year":"2019",
+    "distributor_name":"Shamrock Foods",
+    "distributor_type":"Regional",
+    "net_sales":28926387.0300000012,
+    "prior_year":29933509.8999999985,
+    "yoy_growth":-3.4
+  },
+  {
+    "year":"2019",
+    "distributor_name":"Saval Foodservice",
+    "distributor_type":"Specialty",
+    "net_sales":26973450.5399999991,
+    "prior_year":30011480.9499999993,
+    "yoy_growth":-10.1
+  },
+  {
+    "year":"2019",
+    "distributor_name":"Baldor Specialty Foods",
+    "distributor_type":"Specialty",
+    "net_sales":26129283.1999999993,
+    "prior_year":25794162.1900000013,
+    "yoy_growth":1.3
+  },
+  {
+    "year":"2019",
+    "distributor_name":"Reinhart Foodservice",
+    "distributor_type":"Regional",
+    "net_sales":25958978.9899999984,
+    "prior_year":24079165.6000000015,
+    "yoy_growth":7.8
+  },
+  {
+    "year":"2019",
+    "distributor_name":"Ben E. Keith Foods",
+    "distributor_type":"Regional",
+    "net_sales":25824070.1099999994,
+    "prior_year":26134784.3599999994,
+    "yoy_growth":-1.2
+  },
+  {
+    "year":"2019",
+    "distributor_name":"Nicholas & Co",
+    "distributor_type":"Regional",
+    "net_sales":25430074.25,
+    "prior_year":26243247.1600000001,
+    "yoy_growth":-3.1
+  },
+  {
+    "year":"2019",
+    "distributor_name":"Labatt Food Service",
+    "distributor_type":"Regional",
+    "net_sales":25028342.7699999996,
+    "prior_year":24808848.1400000006,
+    "yoy_growth":0.9
+  },
+  {
+    "year":"2019",
+    "distributor_name":"FreshPoint",
+    "distributor_type":"Specialty",
+    "net_sales":22586379.1000000015,
+    "prior_year":22878372.2800000012,
+    "yoy_growth":-1.3
+  },
+  {
+    "year":"2018",
+    "distributor_name":"Performance Food Group",
+    "distributor_type":"National",
+    "net_sales":519855106.3299999833,
+    "prior_year":481048535.5500000119,
+    "yoy_growth":8.1
+  },
+  {
+    "year":"2018",
+    "distributor_name":"Gordon Food Service",
+    "distributor_type":"National",
+    "net_sales":512296634.1399999857,
+    "prior_year":477256879.2300000191,
+    "yoy_growth":7.3
+  },
+  {
+    "year":"2018",
+    "distributor_name":"Sysco Corporation",
+    "distributor_type":"National",
+    "net_sales":506296126.3700000048,
+    "prior_year":480361626.1200000048,
+    "yoy_growth":5.4
+  },
+  {
+    "year":"2018",
+    "distributor_name":"US Foods",
+    "distributor_type":"National",
+    "net_sales":502258591.9100000262,
+    "prior_year":472462999.8500000238,
+    "yoy_growth":6.3
+  },
+  {
+    "year":"2018",
+    "distributor_name":"Saval Foodservice",
+    "distributor_type":"Specialty",
+    "net_sales":30011480.9499999993,
+    "prior_year":25621130.5399999991,
+    "yoy_growth":17.1
+  },
+  {
+    "year":"2018",
+    "distributor_name":"Shamrock Foods",
+    "distributor_type":"Regional",
+    "net_sales":29933509.8999999985,
+    "prior_year":26430697.0399999991,
+    "yoy_growth":13.3
+  },
+  {
+    "year":"2018",
+    "distributor_name":"Cheney Brothers",
+    "distributor_type":"Regional",
+    "net_sales":28437874.9699999988,
+    "prior_year":25232889.2399999984,
+    "yoy_growth":12.7
+  },
+  {
+    "year":"2018",
+    "distributor_name":"Nicholas & Co",
+    "distributor_type":"Regional",
+    "net_sales":26243247.1600000001,
+    "prior_year":22130156.8999999985,
+    "yoy_growth":18.6
+  },
+  {
+    "year":"2018",
+    "distributor_name":"Ben E. Keith Foods",
+    "distributor_type":"Regional",
+    "net_sales":26134784.3599999994,
+    "prior_year":23966980.6999999993,
+    "yoy_growth":9.0
+  },
+  {
+    "year":"2018",
+    "distributor_name":"Baldor Specialty Foods",
+    "distributor_type":"Specialty",
+    "net_sales":25794162.1900000013,
+    "prior_year":23466635.5500000007,
+    "yoy_growth":9.9
+  },
+  {
+    "year":"2018",
+    "distributor_name":"Labatt Food Service",
+    "distributor_type":"Regional",
+    "net_sales":24808848.1400000006,
+    "prior_year":23471012.9299999997,
+    "yoy_growth":5.7
+  },
+  {
+    "year":"2018",
+    "distributor_name":"Reinhart Foodservice",
+    "distributor_type":"Regional",
+    "net_sales":24079165.6000000015,
+    "prior_year":23682512.1700000018,
+    "yoy_growth":1.7
+  },
+  {
+    "year":"2018",
+    "distributor_name":"FreshPoint",
+    "distributor_type":"Specialty",
+    "net_sales":22878372.2800000012,
+    "prior_year":20394355.5700000003,
+    "yoy_growth":12.2
+  },
+  {
+    "year":"2017",
+    "distributor_name":"Performance Food Group",
+    "distributor_type":"National",
+    "net_sales":481048535.5500000119,
+    "prior_year":495862717.1200000048,
+    "yoy_growth":-3.0
+  },
+  {
+    "year":"2017",
+    "distributor_name":"Sysco Corporation",
+    "distributor_type":"National",
+    "net_sales":480361626.1200000048,
+    "prior_year":485855918.0600000024,
+    "yoy_growth":-1.1
+  },
+  {
+    "year":"2017",
+    "distributor_name":"Gordon Food Service",
+    "distributor_type":"National",
+    "net_sales":477256879.2300000191,
+    "prior_year":490930504.9900000095,
+    "yoy_growth":-2.8
+  },
+  {
+    "year":"2017",
+    "distributor_name":"US Foods",
+    "distributor_type":"National",
+    "net_sales":472462999.8500000238,
+    "prior_year":476490928.3700000048,
+    "yoy_growth":-0.8
+  },
+  {
+    "year":"2017",
+    "distributor_name":"Shamrock Foods",
+    "distributor_type":"Regional",
+    "net_sales":26430697.0399999991,
+    "prior_year":25837944.8999999985,
+    "yoy_growth":2.3
+  },
+  {
+    "year":"2017",
+    "distributor_name":"Saval Foodservice",
+    "distributor_type":"Specialty",
+    "net_sales":25621130.5399999991,
+    "prior_year":26060125.2699999996,
+    "yoy_growth":-1.7
+  },
+  {
+    "year":"2017",
+    "distributor_name":"Cheney Brothers",
+    "distributor_type":"Regional",
+    "net_sales":25232889.2399999984,
+    "prior_year":25982725.7600000016,
+    "yoy_growth":-2.9
+  },
+  {
+    "year":"2017",
+    "distributor_name":"Ben E. Keith Foods",
+    "distributor_type":"Regional",
+    "net_sales":23966980.6999999993,
+    "prior_year":24128536.0399999991,
+    "yoy_growth":-0.7
+  },
+  {
+    "year":"2017",
+    "distributor_name":"Reinhart Foodservice",
+    "distributor_type":"Regional",
+    "net_sales":23682512.1700000018,
+    "prior_year":25548474.5799999982,
+    "yoy_growth":-7.3
+  },
+  {
+    "year":"2017",
+    "distributor_name":"Labatt Food Service",
+    "distributor_type":"Regional",
+    "net_sales":23471012.9299999997,
+    "prior_year":24217741.0599999987,
+    "yoy_growth":-3.1
+  },
+  {
+    "year":"2017",
+    "distributor_name":"Baldor Specialty Foods",
+    "distributor_type":"Specialty",
+    "net_sales":23466635.5500000007,
+    "prior_year":25273517.620000001,
+    "yoy_growth":-7.1
+  },
+  {
+    "year":"2017",
+    "distributor_name":"Nicholas & Co",
+    "distributor_type":"Regional",
+    "net_sales":22130156.8999999985,
+    "prior_year":24635096.7600000016,
+    "yoy_growth":-10.2
+  },
+  {
+    "year":"2017",
+    "distributor_name":"FreshPoint",
+    "distributor_type":"Specialty",
+    "net_sales":20394355.5700000003,
+    "prior_year":21594171.9899999984,
+    "yoy_growth":-5.6
+  },
+  {
+    "year":"2016",
+    "distributor_name":"Performance Food Group",
+    "distributor_type":"National",
+    "net_sales":495862717.1200000048,
+    "prior_year":480464233.4499999881,
+    "yoy_growth":3.2
+  },
+  {
+    "year":"2016",
+    "distributor_name":"Gordon Food Service",
+    "distributor_type":"National",
+    "net_sales":490930504.9900000095,
+    "prior_year":479258424.3700000048,
+    "yoy_growth":2.4
+  },
+  {
+    "year":"2016",
+    "distributor_name":"Sysco Corporation",
+    "distributor_type":"National",
+    "net_sales":485855918.0600000024,
+    "prior_year":470011025.5,
+    "yoy_growth":3.4
+  },
+  {
+    "year":"2016",
+    "distributor_name":"US Foods",
+    "distributor_type":"National",
+    "net_sales":476490928.3700000048,
+    "prior_year":464402149.4100000262,
+    "yoy_growth":2.6
+  },
+  {
+    "year":"2016",
+    "distributor_name":"Saval Foodservice",
+    "distributor_type":"Specialty",
+    "net_sales":26060125.2699999996,
+    "prior_year":25935106.629999999,
+    "yoy_growth":0.5
+  },
+  {
+    "year":"2016",
+    "distributor_name":"Cheney Brothers",
+    "distributor_type":"Regional",
+    "net_sales":25982725.7600000016,
+    "prior_year":27704209.0,
+    "yoy_growth":-6.2
+  },
+  {
+    "year":"2016",
+    "distributor_name":"Shamrock Foods",
+    "distributor_type":"Regional",
+    "net_sales":25837944.8999999985,
+    "prior_year":25960905.3099999987,
+    "yoy_growth":-0.5
+  },
+  {
+    "year":"2016",
+    "distributor_name":"Reinhart Foodservice",
+    "distributor_type":"Regional",
+    "net_sales":25548474.5799999982,
+    "prior_year":24063647.620000001,
+    "yoy_growth":6.2
+  },
+  {
+    "year":"2016",
+    "distributor_name":"Baldor Specialty Foods",
+    "distributor_type":"Specialty",
+    "net_sales":25273517.620000001,
+    "prior_year":23647377.9100000001,
+    "yoy_growth":6.9
+  },
+  {
+    "year":"2016",
+    "distributor_name":"Nicholas & Co",
+    "distributor_type":"Regional",
+    "net_sales":24635096.7600000016,
+    "prior_year":24364594.1799999997,
+    "yoy_growth":1.1
+  },
+  {
+    "year":"2016",
+    "distributor_name":"Labatt Food Service",
+    "distributor_type":"Regional",
+    "net_sales":24217741.0599999987,
+    "prior_year":22957560.2899999991,
+    "yoy_growth":5.5
+  },
+  {
+    "year":"2016",
+    "distributor_name":"Ben E. Keith Foods",
+    "distributor_type":"Regional",
+    "net_sales":24128536.0399999991,
+    "prior_year":22445436.0899999999,
+    "yoy_growth":7.5
+  },
+  {
+    "year":"2016",
+    "distributor_name":"FreshPoint",
+    "distributor_type":"Specialty",
+    "net_sales":21594171.9899999984,
+    "prior_year":21740388.1000000015,
+    "yoy_growth":-0.7
+  },
+  {
+    "year":"2015",
+    "distributor_name":"Performance Food Group",
+    "distributor_type":"National",
+    "net_sales":480464233.4499999881,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"Gordon Food Service",
+    "distributor_type":"National",
+    "net_sales":479258424.3700000048,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"Sysco Corporation",
+    "distributor_type":"National",
+    "net_sales":470011025.5,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"US Foods",
+    "distributor_type":"National",
+    "net_sales":464402149.4100000262,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"Cheney Brothers",
+    "distributor_type":"Regional",
+    "net_sales":27704209.0,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"Shamrock Foods",
+    "distributor_type":"Regional",
+    "net_sales":25960905.3099999987,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"Saval Foodservice",
+    "distributor_type":"Specialty",
+    "net_sales":25935106.629999999,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"Nicholas & Co",
+    "distributor_type":"Regional",
+    "net_sales":24364594.1799999997,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"Reinhart Foodservice",
+    "distributor_type":"Regional",
+    "net_sales":24063647.620000001,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"Baldor Specialty Foods",
+    "distributor_type":"Specialty",
+    "net_sales":23647377.9100000001,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"Labatt Food Service",
+    "distributor_type":"Regional",
+    "net_sales":22957560.2899999991,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"Ben E. Keith Foods",
+    "distributor_type":"Regional",
+    "net_sales":22445436.0899999999,
+    "prior_year":null,
+    "yoy_growth":null
+  },
+  {
+    "year":"2015",
+    "distributor_name":"FreshPoint",
+    "distributor_type":"Specialty",
+    "net_sales":21740388.1000000015,
+    "prior_year":null,
+    "yoy_growth":null
+  }
+]

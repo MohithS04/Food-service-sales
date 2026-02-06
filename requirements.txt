@@ -1,0 +1,21 @@
+# Foodservice Sales Analytics - Python Dependencies
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Data Generation
+faker>=18.0.0
+
+# Database
+sqlalchemy>=2.0.0
+
+# Visualization (for data export)
+plotly>=5.15.0
+
+# Testing
+pytest>=7.4.0
+
+# Utilities
+python-dateutil>=2.8.0
+tqdm>=4.65.0

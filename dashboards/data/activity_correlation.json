@@ -1,0 +1,542 @@
+[
+  {
+    "rep_id":"REP-001",
+    "rep_name":"Nicholas Martin",
+    "total_activities":6988,
+    "calls":415200,
+    "meetings":261360,
+    "site_visits":166080,
+    "revenue":210865199890.5599975586
+  },
+  {
+    "rep_id":"REP-002",
+    "rep_name":"Ethan Adams",
+    "total_activities":7514,
+    "calls":468456,
+    "meetings":315972,
+    "site_visits":190212,
+    "revenue":244966557350.0599975586
+  },
+  {
+    "rep_id":"REP-003",
+    "rep_name":"Patrick Ryan",
+    "total_activities":8816,
+    "calls":670026,
+    "meetings":365113,
+    "site_visits":267288,
+    "revenue":332140890278.0800170898
+  },
+  {
+    "rep_id":"REP-004",
+    "rep_name":"Shannon Hernandez",
+    "total_activities":8983,
+    "calls":667656,
+    "meetings":405108,
+    "site_visits":276507,
+    "revenue":325311178195.3800048828
+  },
+  {
+    "rep_id":"REP-005",
+    "rep_name":"Shannon Smith",
+    "total_activities":9440,
+    "calls":761910,
+    "meetings":466956,
+    "site_visits":323076,
+    "revenue":371054886920.0
+  },
+  {
+    "rep_id":"REP-006",
+    "rep_name":"Troy Liu",
+    "total_activities":9774,
+    "calls":824160,
+    "meetings":475320,
+    "site_visits":333880,
+    "revenue":377616414979.799987793
+  },
+  {
+    "rep_id":"REP-007",
+    "rep_name":"Phillip Ryan",
+    "total_activities":8083,
+    "calls":530820,
+    "meetings":327510,
+    "site_visits":224640,
+    "revenue":253713129913.1000061035
+  },
+  {
+    "rep_id":"REP-008",
+    "rep_name":"Theresa Miller",
+    "total_activities":9937,
+    "calls":846240,
+    "meetings":537328,
+    "site_visits":348128,
+    "revenue":411502678834.6599731445
+  },
+  {
+    "rep_id":"REP-009",
+    "rep_name":"Lisa Brandt",
+    "total_activities":9592,
+    "calls":814668,
+    "meetings":522696,
+    "site_visits":348696,
+    "revenue":396099071454.2399902344
+  },
+  {
+    "rep_id":"REP-010",
+    "rep_name":"Alex Spencer",
+    "total_activities":7751,
+    "calls":506527,
+    "meetings":310426,
+    "site_visits":206323,
+    "revenue":243183325752.8299865723
+  },
+  {
+    "rep_id":"REP-011",
+    "rep_name":"Michael Lewis",
+    "total_activities":8024,
+    "calls":580830,
+    "meetings":337725,
+    "site_visits":228285,
+    "revenue":292221771986.4000244141
+  },
+  {
+    "rep_id":"REP-012",
+    "rep_name":"Heather Jenkins",
+    "total_activities":9194,
+    "calls":729225,
+    "meetings":418635,
+    "site_visits":294210,
+    "revenue":371204837616.6199951172
+  },
+  {
+    "rep_id":"REP-013",
+    "rep_name":"Corey Herrera",
+    "total_activities":8428,
+    "calls":634800,
+    "meetings":373800,
+    "site_visits":242100,
+    "revenue":298494535838.799987793
+  },
+  {
+    "rep_id":"REP-014",
+    "rep_name":"Annette Pearson",
+    "total_activities":8974,
+    "calls":753972,
+    "meetings":428280,
+    "site_visits":309756,
+    "revenue":347259623687.6199951172
+  },
+  {
+    "rep_id":"REP-015",
+    "rep_name":"Anthony Gray",
+    "total_activities":7979,
+    "calls":567560,
+    "meetings":333760,
+    "site_visits":223160,
+    "revenue":265202314744.5199890137
+  },
+  {
+    "rep_id":"REP-016",
+    "rep_name":"Mr. Daniel Brown",
+    "total_activities":7414,
+    "calls":465348,
+    "meetings":279851,
+    "site_visits":178334,
+    "revenue":220497691407.3999938965
+  },
+  {
+    "rep_id":"REP-017",
+    "rep_name":"Cody Larson",
+    "total_activities":7199,
+    "calls":444772,
+    "meetings":260287,
+    "site_visits":176202,
+    "revenue":208649075576.299987793
+  },
+  {
+    "rep_id":"REP-018",
+    "rep_name":"Emily Green",
+    "total_activities":8369,
+    "calls":618485,
+    "meetings":359324,
+    "site_visits":236775,
+    "revenue":290357361793.9799804688
+  },
+  {
+    "rep_id":"REP-019",
+    "rep_name":"Kristine Garcia",
+    "total_activities":7962,
+    "calls":539345,
+    "meetings":333291,
+    "site_visits":208475,
+    "revenue":254648382776.2799987793
+  },
+  {
+    "rep_id":"REP-020",
+    "rep_name":"Joshua Turner",
+    "total_activities":6815,
+    "calls":393250,
+    "meetings":255552,
+    "site_visits":173272,
+    "revenue":188635041827.75
+  },
+  {
+    "rep_id":"REP-021",
+    "rep_name":"Douglas Clark",
+    "total_activities":8859,
+    "calls":724464,
+    "meetings":425088,
+    "site_visits":282852,
+    "revenue":320735233623.75
+  },
+  {
+    "rep_id":"REP-022",
+    "rep_name":"Donald Smith",
+    "total_activities":7630,
+    "calls":511110,
+    "meetings":315360,
+    "site_visits":199530,
+    "revenue":240531241204.1000061035
+  },
+  {
+    "rep_id":"REP-023",
+    "rep_name":"Stephanie Gardner",
+    "total_activities":9656,
+    "calls":849430,
+    "meetings":510004,
+    "site_visits":322472,
+    "revenue":406428650472.9600219727
+  },
+  {
+    "rep_id":"REP-024",
+    "rep_name":"David Garcia",
+    "total_activities":8121,
+    "calls":596024,
+    "meetings":341484,
+    "site_visits":239954,
+    "revenue":276357153540.9299926758
+  },
+  {
+    "rep_id":"REP-025",
+    "rep_name":"Sierra Johnson",
+    "total_activities":9764,
+    "calls":863456,
+    "meetings":511808,
+    "site_visits":338976,
+    "revenue":389568260463.0800170898
+  },
+  {
+    "rep_id":"REP-026",
+    "rep_name":"Courtney Velasquez",
+    "total_activities":6866,
+    "calls":389305,
+    "meetings":231086,
+    "site_visits":156857,
+    "revenue":193965824726.0400085449
+  },
+  {
+    "rep_id":"REP-027",
+    "rep_name":"Benjamin Ayala",
+    "total_activities":7610,
+    "calls":509970,
+    "meetings":305181,
+    "site_visits":205056,
+    "revenue":232082227912.1000061035
+  },
+  {
+    "rep_id":"REP-028",
+    "rep_name":"Deborah Rodriguez",
+    "total_activities":6313,
+    "calls":347434,
+    "meetings":206721,
+    "site_visits":140936,
+    "revenue":164114582557.799987793
+  },
+  {
+    "rep_id":"REP-029",
+    "rep_name":"Dawn Fletcher",
+    "total_activities":7578,
+    "calls":505440,
+    "meetings":300780,
+    "site_visits":216540,
+    "revenue":254301388891.3800048828
+  },
+  {
+    "rep_id":"REP-030",
+    "rep_name":"Tammie Hanson",
+    "total_activities":6817,
+    "calls":422592,
+    "meetings":250480,
+    "site_visits":163184,
+    "revenue":199744660408.1199951172
+  },
+  {
+    "rep_id":"REP-031",
+    "rep_name":"Maurice Gray",
+    "total_activities":5977,
+    "calls":311850,
+    "meetings":190050,
+    "site_visits":123900,
+    "revenue":142277096316.1099853516
+  },
+  {
+    "rep_id":"REP-032",
+    "rep_name":"Jeremy Lowe",
+    "total_activities":7330,
+    "calls":446823,
+    "meetings":273429,
+    "site_visits":180063,
+    "revenue":215900755151.8999938965
+  },
+  {
+    "rep_id":"REP-033",
+    "rep_name":"Nicole Chambers",
+    "total_activities":6487,
+    "calls":347417,
+    "meetings":206367,
+    "site_visits":147126,
+    "revenue":173489435914.7300109863
+  },
+  {
+    "rep_id":"REP-034",
+    "rep_name":"Jason Soto",
+    "total_activities":7987,
+    "calls":552338,
+    "meetings":331569,
+    "site_visits":216891,
+    "revenue":262611311312.4200134277
+  },
+  {
+    "rep_id":"REP-035",
+    "rep_name":"Stacey Osborne",
+    "total_activities":7959,
+    "calls":564062,
+    "meetings":313584,
+    "site_visits":230462,
+    "revenue":276991372466.3400268555
+  },
+  {
+    "rep_id":"REP-036",
+    "rep_name":"Mary Travis",
+    "total_activities":7888,
+    "calls":546521,
+    "meetings":310240,
+    "site_visits":211351,
+    "revenue":253629928650.5599975586
+  },
+  {
+    "rep_id":"REP-037",
+    "rep_name":"Karen Green",
+    "total_activities":8909,
+    "calls":667386,
+    "meetings":417690,
+    "site_visits":278154,
+    "revenue":335620021458.2299804688
+  },
+  {
+    "rep_id":"REP-038",
+    "rep_name":"Steven Miller",
+    "total_activities":7700,
+    "calls":502067,
+    "meetings":300346,
+    "site_visits":199354,
+    "revenue":252771662836.0
+  },
+  {
+    "rep_id":"REP-039",
+    "rep_name":"Jason Stein",
+    "total_activities":8431,
+    "calls":598530,
+    "meetings":347597,
+    "site_visits":247561,
+    "revenue":309316209982.6799926758
+  },
+  {
+    "rep_id":"REP-040",
+    "rep_name":"Tiffany Barnes",
+    "total_activities":10327,
+    "calls":894080,
+    "meetings":558272,
+    "site_visits":352352,
+    "revenue":449642984738.7199707031
+  },
+  {
+    "rep_id":"REP-041",
+    "rep_name":"Tamara Hooper",
+    "total_activities":8095,
+    "calls":571736,
+    "meetings":361204,
+    "site_visits":233308,
+    "revenue":262899312458.8999938965
+  },
+  {
+    "rep_id":"REP-042",
+    "rep_name":"Garrett Gibson",
+    "total_activities":10603,
+    "calls":1076000,
+    "meetings":609200,
+    "site_visits":412000,
+    "revenue":490301074217.1199951172
+  },
+  {
+    "rep_id":"REP-043",
+    "rep_name":"Trevor Walker",
+    "total_activities":10490,
+    "calls":978957,
+    "meetings":601094,
+    "site_visits":398329,
+    "revenue":452021561851.700012207
+  },
+  {
+    "rep_id":"REP-044",
+    "rep_name":"John Wilson",
+    "total_activities":8946,
+    "calls":689379,
+    "meetings":423639,
+    "site_visits":279336,
+    "revenue":322777886376.9600219727
+  },
+  {
+    "rep_id":"REP-045",
+    "rep_name":"Eric Lane",
+    "total_activities":10841,
+    "calls":1002644,
+    "meetings":604449,
+    "site_visits":386084,
+    "revenue":492213307990.0700073242
+  },
+  {
+    "rep_id":"REP-046",
+    "rep_name":"Sarah Burke",
+    "total_activities":8169,
+    "calls":627000,
+    "meetings":349200,
+    "site_visits":233100,
+    "revenue":272741889447.5100097656
+  },
+  {
+    "rep_id":"REP-047",
+    "rep_name":"Alexandria Fisher",
+    "total_activities":7812,
+    "calls":526902,
+    "meetings":307428,
+    "site_visits":221118,
+    "revenue":256834601220.9599914551
+  },
+  {
+    "rep_id":"REP-048",
+    "rep_name":"Debra Morton",
+    "total_activities":10031,
+    "calls":867265,
+    "meetings":550960,
+    "site_visits":351450,
+    "revenue":434935224485.5100097656
+  },
+  {
+    "rep_id":"REP-049",
+    "rep_name":"Paul Hudson",
+    "total_activities":8383,
+    "calls":599386,
+    "meetings":369053,
+    "site_visits":232356,
+    "revenue":294121906279.9799804688
+  },
+  {
+    "rep_id":"REP-050",
+    "rep_name":"Meredith Hill",
+    "total_activities":10446,
+    "calls":924350,
+    "meetings":543550,
+    "site_visits":352450,
+    "revenue":460298418099.1799926758
+  },
+  {
+    "rep_id":"REP-051",
+    "rep_name":"Maria Henry",
+    "total_activities":8800,
+    "calls":656180,
+    "meetings":386484,
+    "site_visits":286251,
+    "revenue":332492927888.0
+  },
+  {
+    "rep_id":"REP-052",
+    "rep_name":"Patrick Rivera",
+    "total_activities":7186,
+    "calls":490203,
+    "meetings":319734,
+    "site_visits":200601,
+    "revenue":221403763202.2399902344
+  },
+  {
+    "rep_id":"REP-053",
+    "rep_name":"Pamela Lopez",
+    "total_activities":7774,
+    "calls":587140,
+    "meetings":352780,
+    "site_visits":247070,
+    "revenue":279119340978.4000244141
+  },
+  {
+    "rep_id":"REP-054",
+    "rep_name":"Isaac Turner",
+    "total_activities":5992,
+    "calls":306020,
+    "meetings":192814,
+    "site_visits":140170,
+    "revenue":151629340163.2799987793
+  },
+  {
+    "rep_id":"REP-055",
+    "rep_name":"Duane Mendoza",
+    "total_activities":9149,
+    "calls":747500,
+    "meetings":444275,
+    "site_visits":285025,
+    "revenue":350818823292.2800292969
+  },
+  {
+    "rep_id":"REP-056",
+    "rep_name":"Amy Hernandez",
+    "total_activities":7150,
+    "calls":444312,
+    "meetings":252164,
+    "site_visits":163592,
+    "revenue":209730807858.0
+  },
+  {
+    "rep_id":"REP-057",
+    "rep_name":"Terry Evans",
+    "total_activities":8708,
+    "calls":653922,
+    "meetings":405756,
+    "site_visits":246942,
+    "revenue":319056431961.1199951172
+  },
+  {
+    "rep_id":"REP-058",
+    "rep_name":"Daniel Guerrero",
+    "total_activities":7066,
+    "calls":415010,
+    "meetings":256150,
+    "site_visits":163795,
+    "revenue":206088267802.8999938965
+  },
+  {
+    "rep_id":"REP-059",
+    "rep_name":"Dwayne Campbell",
+    "total_activities":6937,
+    "calls":416500,
+    "meetings":246330,
+    "site_visits":156366,
+    "revenue":187164160328.25
+  },
+  {
+    "rep_id":"REP-060",
+    "rep_name":"Maria Kerr",
+    "total_activities":7977,
+    "calls":560025,
+    "meetings":336300,
+    "site_visits":235125,
+    "revenue":276142133896.6500244141
+  }
+]
